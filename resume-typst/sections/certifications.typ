@@ -1,11 +1,12 @@
-// Certifications section — licenses, certificates, and completed credentials.
+// Certifications section — licenses and completed credentials.
 //
-// Uses #bullet-list(...) for a simple ATS-friendly list.
-// Include in tailored resumes when the job description asks for credentials.
+// Import in tailor/tailored-resume.typ:
+//   #import "../sections/certifications.typ": certifications-block
+//   #certifications-block
 
 #import "../template/resume.typ": bullet-list
 
 #let certifications-block = bullet-list((
-  "Example Certification — Issuing Organization (2024)",
-  "Another Credential — Issuing Organization (2023)",
+  "AWS Certified Cloud Practitioner: Amazon Web Services, Sept. 2025",
+  "ICTC Work Integrated Learning: WIL Cloud Computing, Aug 2025",
 ))

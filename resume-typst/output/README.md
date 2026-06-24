@@ -5,6 +5,7 @@ Compiled resume PDFs are saved here.
 Example:
 
 ```sh
+cd typst-cv/resume-typst
 typst compile --root . tailor/tailored-resume.typ output/Abiodun_Magret_Oyedele_Resume.pdf
 ```
 

@@ -1,32 +1,25 @@
-// Projects section — personal, open-source, or portfolio projects.
+// Projects section — reusable project entries.
 //
-// One block per project. In tailor/tailored-resume.typ, include only projects
-// that support the job you are applying for.
+// Import only the projects you need in tailor/tailored-resume.typ.
 
-#import "../template/resume.typ": entry, bullet-list
+#import "../template/resume.typ": entry
 
-#let project-example-one = entry(
-  "Portfolio Website",
-  "Personal Project",
-  "2024",
+#let project-joborg = entry(
+  "Joborg",
+  "Job Link Tracker and Automated Monitoring Platform",
+  "Jun 2026 - Present",
   "",
   [
-    A responsive website showcasing selected work and technical writing.
-    #v(0.1em)
-    #bullet-list((
-      "Implemented accessible layout and fast page loads",
-      "Deployed with automated build and preview workflow",
-    ))
+    Building and deploying a full-stack SaaS-style job tracking platform with a functional Node.js backend, PostgreSQL database workflows, URL validation, scheduled content monitoring, tracker records, and automated email notification logic; frontend development is in progress using Next.js.
   ],
 )
 
-#let project-example-two = entry(
-  "Task Tracker App",
-  "Personal Project",
-  "2023",
+#let project-instaloanx = entry(
+  "InstaloanX",
+  "Loan Management Application",
+  "Mar 2025",
   "",
-  bullet-list((
-    "Built a full-stack app for tracking daily tasks and deadlines",
-    "Used REST API design and persistent storage",
-  )),
+  [
+    Built a full-stack loan management application using React, Express.js, and MySQL, with JWT authentication, role-based access control, RESTful API integration, responsive UI screens, and environment-based deployment on Netlify.
+  ],
 )

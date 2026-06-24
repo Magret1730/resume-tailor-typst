@@ -1,18 +1,19 @@
 // Header section — name and contact details.
 //
-// Uses #resume-header(...) from template/resume.typ.
-// In tailor/tailored-resume.typ, import this file and call #header,
-// or call #resume-header(...) directly with your chosen details.
+// Import in tailor/tailored-resume.typ:
+//   #import "../sections/header.typ": header
+//   #header
 
 #import "../template/resume.typ": resume-header
 
 #let header = resume-header(
-  "Your Full Name",
-  "City, Country",
-  "(555) 123-4567",
-  "email@example.com",
+  "Abiodun Magret Oyedele",
+  "Mount Pearl",
+  "(709) 219-7797",
+  "belloabiodun17@gmail.com",
   (
-    "linkedin.com/in/yourprofile",
-    "github.com/yourusername",
+    "magret.ca",
+    "github.com/Magret1730",
+    "linkedin.com/in/oyedele-abiodun",
   ),
 )

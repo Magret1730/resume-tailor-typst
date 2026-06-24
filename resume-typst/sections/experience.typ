@@ -1,29 +1,31 @@
-// Experience section — work history entries.
+// Work experience — reusable role entries.
 //
-// Store each role as a reusable block. Name them clearly (e.g. role-company).
-// In tailor/tailored-resume.typ, import only the roles relevant to the job.
+// Import only the roles you need in tailor/tailored-resume.typ.
 
 #import "../template/resume.typ": entry, bullet-list
 
-#let experience-role-one = entry(
-  "Software Engineer",
-  "Example Company",
-  "Jan 2022 – Present",
-  "Remote",
+#let experience-expertise-hub = entry(
+  "Software Developer Intern",
+  "Expertise Hub",
+  "Feb 2026 - June 2026",
+  "St. John's, NL, Canada",
   bullet-list((
-    "Designed and shipped features used by thousands of active users each month",
-    "Collaborated with product and design to deliver projects on schedule",
-    "Improved application performance and reduced bug reports through testing and code review",
+    "Developed responsive web application features using React, Next.js, TypeScript, HTML, and CSS within a modern full-stack development environment.",
+    "Built reusable frontend components and integrated user-facing workflows with backend APIs to support dynamic application features.",
+    "Collaborated with developers, designers, and stakeholders through Agile sprint planning, standups, feature discussions, and pull request reviews.",
+    "Troubleshot frontend issues, improved usability, and contributed to testing, documentation, and maintainable production-ready code.",
   )),
 )
 
-#let experience-role-two = entry(
-  "Junior Developer",
-  "Sample Startup",
-  "Jun 2020 – Dec 2021",
-  "Toronto, ON",
+#let experience-vifta = entry(
+  "Junior Software Developer Intern",
+  "Vifta Technology Limited",
+  "Apr 2025 - Mar 2026",
+  "St. John's, NL, Canada",
   bullet-list((
-    "Built internal tools that reduced manual work for operations teams",
-    "Maintained documentation and supported onboarding for new team members",
+    "Built and maintained full-stack web application features using Next.js, TypeScript, Material UI, Node.js, and MongoDB.",
+    "Developed backend functionality, including file upload processing and dynamic email template workflows to support automated content generation.",
+    "Integrated PostHog analytics to capture user events and provide product insights for behavioural analysis and roadmap decisions.",
+    "Reviewed intern pull requests, supported production issue fixes, and collaborated with cross-functional team members to improve reliability and code quality.",
   )),
 )
