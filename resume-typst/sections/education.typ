@@ -6,8 +6,11 @@
 #import "../template/resume.typ": entry
 
 #let education-degree-one = entry(
-  "Degree or Program — Institution Name",
-  "Graduation Year",
-)[
-  Optional details: honors, focus area, or relevant coursework.
-]
+  "Bachelor of Science in Computer Science",
+  "Example University",
+  "2016 – 2020",
+  "City, Country",
+  [
+    Relevant coursework: Data Structures, Algorithms, Databases, Software Engineering.
+  ],
+)

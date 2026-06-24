@@ -3,20 +3,30 @@
 // One block per project. In tailor/tailored-resume.typ, include only projects
 // that support the job you are applying for.
 
-#import "../template/resume.typ": entry
+#import "../template/resume.typ": entry, bullet-list
 
 #let project-example-one = entry(
-  "Project Name",
-  "Year or status",
-)[
-  One-line description of what the project does and why it matters.
-  - Notable technical choice or result
-  - Link or metric if available
-]
+  "Portfolio Website",
+  "Personal Project",
+  "2024",
+  "",
+  [
+    A responsive website showcasing selected work and technical writing.
+    #v(0.1em)
+    #bullet-list((
+      "Implemented accessible layout and fast page loads",
+      "Deployed with automated build and preview workflow",
+    ))
+  ],
+)
 
 #let project-example-two = entry(
-  "Another Project",
-  "Year or status",
-)[
-  Short description and tailored bullet points.
-]
+  "Task Tracker App",
+  "Personal Project",
+  "2023",
+  "",
+  bullet-list((
+    "Built a full-stack app for tracking daily tasks and deadlines",
+    "Used REST API design and persistent storage",
+  )),
+)

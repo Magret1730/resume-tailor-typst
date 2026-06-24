@@ -1,19 +1,18 @@
-// Header section — name, job title, and contact details.
+// Header section — name and contact details.
 //
-// Keep all contact variants here (email, phone, LinkedIn, GitHub, portfolio).
-// In tailor/tailored-resume.typ, import and use the version that fits the role.
+// Uses #resume-header(...) from template/resume.typ.
+// In tailor/tailored-resume.typ, import this file and call #header,
+// or call #resume-header(...) directly with your chosen details.
 
-#let header = [
-  #align(center)[
-    #text(size: 22pt, weight: "bold")[Your Name]
-    #v(0.2em)
-    #text(size: 12pt, fill: rgb("#555555"))[Your Professional Title]
-    #v(0.35em)
-    #text(size: 9pt)[
-      City, Country #sym.bullet
-      email\@example.com #sym.bullet
-      linkedin.com/in/yourprofile
-    ]
-  ]
-  #v(0.6em)
-]
+#import "../template/resume.typ": resume-header
+
+#let header = resume-header(
+  "Your Full Name",
+  "City, Country",
+  "(555) 123-4567",
+  "email@example.com",
+  (
+    "linkedin.com/in/yourprofile",
+    "github.com/yourusername",
+  ),
+)

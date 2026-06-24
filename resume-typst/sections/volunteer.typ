@@ -1,14 +1,16 @@
 // Volunteer section — community work, mentoring, and unpaid leadership roles.
 //
-// Useful when a job values culture fit, teaching, or community involvement.
 // Import only when relevant to the tailored resume.
 
-#import "../template/resume.typ": entry
+#import "../template/resume.typ": entry, bullet-list
 
 #let volunteer-example = entry(
-  "Role — Organization Name",
-  "Start Year – End Year",
-)[
-  - What you did and who you helped
-  - Outcome or impact, if any
-]
+  "Mentor",
+  "Community Tech Program",
+  "2023 – Present",
+  "City, Country",
+  bullet-list((
+    "Supported learners with fundamentals of programming and career guidance",
+    "Led small group sessions and answered questions during project weeks",
+  )),
+)

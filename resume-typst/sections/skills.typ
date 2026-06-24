@@ -1,14 +1,13 @@
 // Skills section — technical and soft skills grouped by category.
 //
-// List skills you may want to highlight. When tailoring, import the groups
-// that match the job description and hide the rest.
+// Uses #skills-line(category, items) from template/resume.typ.
+// When tailoring, import only the lines that match the job description.
 
-#let skills-technical = [
-  *Technical*\
-  Language A, Language B, Framework C, Tool D, Platform E
-]
+#import "../template/resume.typ": skills-line
 
-#let skills-soft = [
-  *Soft Skills*\
-  Communication, Collaboration, Problem solving
+#let skills-block = [
+  #skills-line("Languages", ("JavaScript", "TypeScript", "Python", "SQL"))
+  #skills-line("Frameworks", ("React", "Next.js", "Node.js"))
+  #skills-line("Tools", ("Git", "Docker", "CI/CD", "PostgreSQL"))
+  #skills-line("Soft Skills", ("Communication", "Team collaboration", "Problem solving"))
 ]
