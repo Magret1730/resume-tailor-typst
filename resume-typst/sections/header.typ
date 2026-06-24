@@ -11,9 +11,7 @@
   "Mount Pearl",
   "(709) 219-7797",
   "belloabiodun17@gmail.com",
-  (
-    "magret.ca",
-    "github.com/Magret1730",
-    "linkedin.com/in/oyedele-abiodun",
-  ),
+  "https://magret.ca",
+  "https://github.com/Magret1730",
+  "https://www.linkedin.com/in/oyedele-abiodun/",
 )

@@ -3,13 +3,11 @@
 // Import ONE summary in tailor/tailored-resume.typ based on the target role.
 // Each variant uses 2–3 bullet points drawn from your real resume content.
 
-// Healthcare / software roles (current default — paragraph format).
+// Healthcare / software roles (current default).
 #let summary_healthcare_ai = [
-  Recent Software Development graduate from Keyin College with over one year of professional full-stack development experience building responsive web applications, SaaS-style features, APIs, and database-driven workflows.
-
-  Skilled in React, Next.js, TypeScript, JavaScript, Node.js, Express.js, SQL, MongoDB, RESTful APIs, authentication workflows, analytics tracking, and cloud-based deployment using AWS, Vercel, and Netlify.
-
-  AWS Certified Cloud Practitioner with practical experience collaborating in Agile teams, reviewing pull requests, troubleshooting production issues, writing technical documentation, and delivering maintainable, user-focused software solutions.
+  - Recent Software Development graduate from Keyin College with over one year of professional full-stack development experience building responsive web applications, SaaS-style features, APIs, and database-driven workflows.
+  - Skilled in React, Next.js, TypeScript, JavaScript, Node.js, Express.js, SQL, MongoDB, RESTful APIs, authentication workflows, analytics tracking, and cloud-based deployment using AWS, Vercel, and Netlify.
+  - AWS Certified Cloud Practitioner with practical experience collaborating in Agile teams, reviewing pull requests, troubleshooting production issues, writing technical documentation, and delivering maintainable, user-focused software solutions.
 ]
 
 // General software development roles.
