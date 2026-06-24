@@ -4,24 +4,50 @@ A simple Typst-based workflow for building tailored resumes from a reusable cont
 
 ## How it works
 
-1. **Store reusable content** in `sections/` — one file per resume section (header, experience, skills, etc.).
-2. **Paste a job description** into `tailor/job-description.txt` for reference while you edit.
-3. **Build one tailored resume** in `tailor/tailored-resume.typ` by importing sections and choosing what to include.
-4. **Compile to PDF** into `output/`.
+1. **Reusable content** lives in `sections/` — one file per resume section.
+2. **One tailored resume at a time** is built in `tailor/tailored-resume.typ`.
+3. **Job context** goes in `tailor/job-description.txt` while you edit.
+4. **PDF output** is compiled into `output/`.
 
-You maintain one content library and create a new tailored resume each time you apply — without duplicating your entire resume in every file.
+You keep one content library and adjust `tailor/tailored-resume.typ` for each application.
 
 ## Project structure
 
 ```
 resume-typst/
-├── template/          # Base layout and styling
-├── sections/          # Reusable content library (edit once, reuse many times)
-├── tailor/            # Per-job resume (select and edit content here)
+├── template/          # Layout and styling (shared)
+├── sections/          # Reusable content library
+├── tailor/            # Per-job working files
+│   ├── job-description.txt
+│   └── tailored-resume.typ
 └── output/            # Generated PDFs
 ```
 
-## Compile command
+## Tailoring workflow
+
+### 1. Paste the job description
+
+Open `tailor/job-description.txt`, delete the placeholder, and paste the full job posting.
+
+### 2. Tailor the resume
+
+Open `tailor/tailored-resume.typ` and edit the **TAILORING AREAS** marked in comments:
+
+- **Summary selection** — swap `summary_healthcare_ai` for another variant when ready
+- **Work experience** — include, reorder, or adjust role bullets
+- **Skills order** — use `skills-block` or reorder individual `skills-line` rows
+- **Project selection** — include Joborg, InstaloanX, or both
+- **Optional sections** — education entries, volunteer, certifications
+
+Or ask Cursor:
+
+> Read `tailor/job-description.txt` and tailor `tailor/tailored-resume.typ` using the section library. Do not invent experience.
+
+### 3. Review manually
+
+Read the PDF and the `.typ` file. Confirm every fact is accurate and nothing was invented.
+
+### 4. Compile the PDF
 
 From the `resume-typst` folder:
 
@@ -29,16 +55,25 @@ From the `resume-typst` folder:
 typst compile --root . tailor/tailored-resume.typ output/Abiodun_Magret_Oyedele_Resume.pdf
 ```
 
-## Quick start
+Find the PDF in `output/`.
 
-1. Add your real content to the files in `sections/`.
-2. Open `tailor/tailored-resume.typ` and uncomment the sections you want for this application.
-3. Adjust wording in `tailor/tailored-resume.typ` to match the job in `job-description.txt`.
-4. Run the compile command above.
-5. Find your PDF in `output/`.
+## Summary variants
+
+Stored in `sections/summaries.typ`:
+
+| Variable | Use when |
+|----------|----------|
+| `summary_healthcare_ai` | Healthcare / software roles (current default) |
+| `summary_fullstack` | Full-stack roles (fill in first) |
+| `summary_frontend` | Frontend-focused roles (fill in first) |
+| `summary_backend` | Backend-focused roles (fill in first) |
+| `summary_geo_tech` | Geology / GIS / software roles (fill in first) |
+| `summary_coordinator` | Coordinator / program roles (fill in first) |
+| `summary_general` | General-purpose (fill in first) |
 
 ## Tips
 
-- Keep `sections/` as your master library — avoid deleting content; comment it out or skip imports instead.
-- Use `tailor/tailored-resume.typ` only for the version you are sending for one job.
+- Edit `sections/` to update reusable content; edit `tailor/tailored-resume.typ` to choose what goes on one application.
+- Comment out sections or entries instead of deleting them — easy to turn back on.
 - Re-run the compile command after every edit to preview changes.
+- Do not create separate version files — one `tailored-resume.typ` per active application is enough.

@@ -1,21 +1,65 @@
-Paste the job description here when tailoring a resume.
+================================================================================
+JOB DESCRIPTION — paste the posting for the role you are applying to below
+================================================================================
 
-Use this file as a reference while you edit tailor/tailored-resume.typ:
-- Note required skills and keywords
-- Match bullet points to what the employer asks for
-- Drop sections that are not relevant
+How to use this file:
+1. Delete everything below the dashed line (or replace it entirely).
+2. Paste the full job posting here (title, company, requirements, responsibilities).
+3. Keep this file open while you edit tailor/tailored-resume.typ.
+4. Look for keywords, required skills, and priorities to guide your edits.
 
-Example placeholders (replace with a real posting):
+What to look for:
+- Required programming languages, frameworks, and tools
+- Role focus (frontend, backend, full-stack, cloud, healthcare, GIS, etc.)
+- Soft skills and teamwork expectations
+- Whether certifications, volunteer work, or specific projects matter
 
----
-Job Title: Software Engineer
-Company: Example Corp
+Optional — ask Cursor to help:
+  "Read tailor/job-description.txt and tailor tailor/tailored-resume.typ
+   using the section library. Do not invent experience."
+
+Then review every change manually before compiling.
+
+--------------------------------------------------------------------------------
+PASTE JOB DESCRIPTION BELOW THIS LINE
+--------------------------------------------------------------------------------
+
+Job Title:
+Company:
+Location:
+
+About the role:
+
 
 Requirements:
-- ...
-- ...
+-
+-
+-
 
 Responsibilities:
-- ...
-- ...
----
+-
+-
+-
+
+Nice to have:
+-
+-
+
+--------------------------------------------------------------------------------
+Notes for tailoring (optional — fill in as you review the posting):
+--------------------------------------------------------------------------------
+
+Keywords to emphasize:
+
+
+Sections to include or remove:
+
+
+Summary variant to use (see tailor/tailored-resume.typ):
+  [ ] summary_healthcare_ai   (healthcare / software — current default)
+  [ ] summary_fullstack       (fill in sections/summaries.typ first)
+  [ ] summary_frontend        (fill in sections/summaries.typ first)
+  [ ] summary_backend         (fill in sections/summaries.typ first)
+  [ ] summary_geo_tech        (geology / GIS / software — fill in first)
+  [ ] summary_coordinator     (coordinator / program roles — fill in first)
+  [ ] summary_general         (fill in sections/summaries.typ first)
