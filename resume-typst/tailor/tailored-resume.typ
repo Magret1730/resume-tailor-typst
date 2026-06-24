@@ -22,20 +22,23 @@
 //
 // Pick ONE summary variable. Import only the one you need, then use it below.
 //
-// Examples:
+// All summary variants are ready in sections/summaries.typ. Pick ONE:
 //   summary_healthcare_ai  → healthcare / software jobs (current default)
-//   summary_fullstack      → full-stack jobs (fill in sections/summaries.typ first)
-//   summary_frontend       → frontend-focused jobs (fill in first)
-//   summary_backend        → backend-focused jobs (fill in first)
-//   summary_geo_tech       → geology / GIS / software jobs (fill in first)
-//   summary_coordinator    → coordinator / program roles (fill in first)
-//   summary_general        → general-purpose summary (fill in first)
+//   summary_general        → general software development roles
+//   summary_fullstack      → full-stack development roles
+//   summary_frontend       → frontend-focused roles
+//   summary_backend        → backend-focused roles
+//   summary_geo_tech       → geology / GIS / technical software roles
+//   summary_coordinator    → coordinator / mentoring / program roles
 //
-// To switch: change the import line below, then update the summary used in
+// To switch: change the import line below, then update the matching line in
 // the "Assembled resume" section.
 
 #import "../sections/summaries.typ": summary_healthcare_ai
+// #import "../sections/summaries.typ": summary_general
 // #import "../sections/summaries.typ": summary_fullstack
+// #import "../sections/summaries.typ": summary_frontend
+// #import "../sections/summaries.typ": summary_backend
 // #import "../sections/summaries.typ": summary_geo_tech
 // #import "../sections/summaries.typ": summary_coordinator
 
@@ -126,8 +129,12 @@
 #section-title("Summary of Qualifications")
 #summary_healthcare_ai
 // When you switch summary import above, change this line too, e.g.:
+// #summary_general
 // #summary_fullstack
+// #summary_frontend
+// #summary_backend
 // #summary_geo_tech
+// #summary_coordinator
 
 #section-title("Work Experience")
 #experience-expertise-hub

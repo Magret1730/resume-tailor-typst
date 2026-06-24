@@ -64,12 +64,12 @@ Stored in `sections/summaries.typ`:
 | Variable | Use when |
 |----------|----------|
 | `summary_healthcare_ai` | Healthcare / software roles (current default) |
-| `summary_fullstack` | Full-stack roles (fill in first) |
-| `summary_frontend` | Frontend-focused roles (fill in first) |
-| `summary_backend` | Backend-focused roles (fill in first) |
-| `summary_geo_tech` | Geology / GIS / software roles (fill in first) |
-| `summary_coordinator` | Coordinator / program roles (fill in first) |
-| `summary_general` | General-purpose (fill in first) |
+| `summary_general` | General software development roles |
+| `summary_fullstack` | Full-stack development roles |
+| `summary_frontend` | Frontend-focused roles |
+| `summary_backend` | Backend-focused roles |
+| `summary_geo_tech` | Geology / GIS / technical software roles |
+| `summary_coordinator` | Coordinator / mentoring / program roles |
 
 ## Tips
 

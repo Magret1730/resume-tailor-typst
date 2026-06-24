@@ -57,9 +57,9 @@ Sections to include or remove:
 
 Summary variant to use (see tailor/tailored-resume.typ):
   [ ] summary_healthcare_ai   (healthcare / software — current default)
-  [ ] summary_fullstack       (fill in sections/summaries.typ first)
-  [ ] summary_frontend        (fill in sections/summaries.typ first)
-  [ ] summary_backend         (fill in sections/summaries.typ first)
-  [ ] summary_geo_tech        (geology / GIS / software — fill in first)
-  [ ] summary_coordinator     (coordinator / program roles — fill in first)
-  [ ] summary_general         (fill in sections/summaries.typ first)
+  [ ] summary_general         (general software development)
+  [ ] summary_fullstack       (full-stack development)
+  [ ] summary_frontend        (frontend-focused)
+  [ ] summary_backend         (backend-focused)
+  [ ] summary_geo_tech        (geology / GIS / technical software)
+  [ ] summary_coordinator     (coordinator / mentoring / program roles)
