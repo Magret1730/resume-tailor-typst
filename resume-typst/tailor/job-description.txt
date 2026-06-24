@@ -1,0 +1,21 @@
+Paste the job description here when tailoring a resume.
+
+Use this file as a reference while you edit tailor/tailored-resume.typ:
+- Note required skills and keywords
+- Match bullet points to what the employer asks for
+- Drop sections that are not relevant
+
+Example placeholders (replace with a real posting):
+
+---
+Job Title: Software Engineer
+Company: Example Corp
+
+Requirements:
+- ...
+- ...
+
+Responsibilities:
+- ...
+- ...
+---
