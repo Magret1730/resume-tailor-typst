@@ -10,6 +10,13 @@
   - AWS Certified Cloud Practitioner with practical experience collaborating in Agile teams, reviewing pull requests, troubleshooting production issues, writing technical documentation, and delivering maintainable, user-focused software solutions.
 ]
 
+// Healthcare software and support engineering roles.
+#let summary_healthcare_support = [
+  - Recent Software Development graduate from Keyin College, eligible to work full-time in Newfoundland and Labrador, with over one year of professional full-stack development experience building web applications, APIs, database-driven workflows, and deployed application features.
+  - Skilled in React, Next.js, TypeScript, JavaScript, Node.js, SQL, RESTful APIs, troubleshooting frontend and production issues, technical documentation, analytics and event tracking, and collaborating with developers and stakeholders in Agile teams.
+  - AWS Certified Cloud Practitioner with experience supporting production-ready software; interested in contributing to healthcare software and learning clinical software workflows and device-support tooling in a collaborative team environment.
+]
+
 // General software development roles.
 #let summary_general = [
   - Recent Software Development graduate from Keyin College with over one year of professional experience building web applications, APIs, and database-driven workflows.
